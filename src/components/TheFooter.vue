@@ -13,16 +13,6 @@
       >
         Home
       </v-btn>
-      <v-btn
-        v-if="$store.state.auth.token"
-        color="white"
-        variant="text"
-        class="mx-2"
-        rounded="xl"
-        to="/table_form"
-      >
-        Create table
-      </v-btn>
       <div v-if="!$store.state.auth.token">
         <v-btn
           v-for="link in links"

@@ -1,8 +1,8 @@
-# Games Store
+# Vue3 forms with Firebase
 
 ## Description
 
-You can test the application on a remote server <https://test-app-vue-5f08b.web.app>
+You can test the app on a remote server <https://vue3-forms-firebase.web.app>
 
 You can create your own account or use test data
 

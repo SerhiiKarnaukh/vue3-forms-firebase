@@ -25,22 +25,6 @@ const routes = [
     }
   },
   {
-    path: '/table_form',
-    name: 'tableForm',
-    component: () => import('@/views/TableFormView.vue'),
-    meta: {
-        auth: true
-    }
-  },
-  {
-    path: '/table',
-    name: 'table',
-    component: () => import('@/views/TableView.vue'),
-    meta: {
-        auth: true
-    }
-  },
-  {
     path: '/product_detail/:product_id',
     name: 'product',
     component: () => import('@/views/ProductDetailView.vue'),

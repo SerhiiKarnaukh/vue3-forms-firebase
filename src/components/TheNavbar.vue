@@ -39,14 +39,6 @@
           >
             Logout
           </v-btn>
-          <v-btn
-            flat
-            color="white"
-            prepend-icon="mdi-table"
-            to="/table_form"
-          >
-            Create table
-          </v-btn>
         </div>
 
         <v-btn
@@ -83,14 +75,6 @@
             @click="logout"
           >
             Logout
-          </v-list-item>
-          <v-list-item
-            flat
-            color="white"
-            prepend-icon="mdi-table"
-            to="/table_form"
-          >
-            Create table
           </v-list-item>
         </div>
         <v-list-item

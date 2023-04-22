@@ -1,4 +1,5 @@
 # Vue3 forms with Firebase
+![App Screenshot](https://github.com/SerhiiKarnaukh/vue3-forms-firebase/blob/master/games_store.jpg)
 
 ## Description
 

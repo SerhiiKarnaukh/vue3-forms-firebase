@@ -1,4 +1,5 @@
 # Vue3 forms with Firebase
+
 ![App Screenshot](https://github.com/SerhiiKarnaukh/vue3-forms-firebase/blob/master/games_store.jpg)
 
 ## Description
@@ -17,7 +18,7 @@ password: 12345678
 ## Node.js version
 
 ```
-v19.7.0
+v20.9.0
 ```
 
 ## Project setup

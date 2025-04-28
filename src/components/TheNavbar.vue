@@ -8,7 +8,7 @@
       ></v-app-bar-nav-icon>
       <router-link to="/" style="text-decoration: none">
         <v-app-bar-title>
-          <h3 class="main_title ml-3">Games Store</h3>
+          <h3 class="main_title ml-3">Products Store</h3>
         </v-app-bar-title>
       </router-link>
       <v-spacer></v-spacer>

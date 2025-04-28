@@ -1,20 +1,15 @@
 <template>
   <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
-    <div class="d-flex flex-column fill-height justify-center align-center text-white">
-      <h1 class="text-h4 font-weight-thin mb-4">
-        Games Store
-      </h1>
-      <h4 class="subheading">
-        The best Games in the whole world!
-      </h4>
+    <div
+      class="d-flex flex-column fill-height justify-center align-center text-white"
+    >
+      <h1 class="text-h4 font-weight-thin mb-4">Test Store</h1>
+      <h4 class="subheading">The best Games in the whole world!</h4>
     </div>
   </v-parallax>
   <v-container>
     <v-main class="pt-4 pt-md-16">
-      <v-row
-        class="py-5"
-        justify="center"
-      >
+      <v-row class="py-5" justify="center">
         <h2>Latest products</h2>
 
         <v-col cols="12">
@@ -27,11 +22,7 @@
               sm="6"
             >
               <v-card class="mx-auto pb-2">
-                <v-img
-                  :src="product.thumbnail"
-                  height="200px"
-                  cover
-                >
+                <v-img :src="product.thumbnail" height="200px" cover>
                   <template v-slot:placeholder>
                     <v-row
                       align="center"
@@ -49,7 +40,9 @@
                 <v-card-title class="text-capitalize">
                   {{ product.title }}
                 </v-card-title>
-                <v-card-title class="grey--text text-grey-darken-1 caption mt-n4">
+                <v-card-title
+                  class="grey--text text-grey-darken-1 caption mt-n4"
+                >
                   {{ product.description }}
                 </v-card-title>
 
@@ -61,7 +54,8 @@
                     :to="'product_detail/' + product.id"
                     variant="flat"
                     color="primary"
-                  >Details</v-btn>
+                    >Details</v-btn
+                  >
                 </v-card-actions>
               </v-card>
             </v-col>
@@ -78,7 +72,7 @@ export default {
   name: 'HomeView',
   data() {
     return {
-        latestProducts: [],
+      latestProducts: [],
     }
   },
   mounted() {
@@ -86,17 +80,16 @@ export default {
   },
   methods: {
     getLatestProducts() {
-        axios
-            .get('/products')
-            .then(response => {
-                this.latestProducts = response.data.products
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }
-  }
-};
+      axios
+        .get('/products')
+        .then((response) => {
+          this.latestProducts = response.data.products
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    },
+  },
+}
 </script>
-<style scoped>
-</style>
+<style scoped></style>

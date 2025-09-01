@@ -18,7 +18,7 @@ password: 12345678
 ## Node.js version
 
 ```
-v22.16.0
+v22.19.0
 ```
 
 ## Project setup

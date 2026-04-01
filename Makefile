@@ -18,6 +18,8 @@ node:
 	done
 
 update:
+    rm -rf node_modules
+    rm -f package-lock.json
 	ncu
 	ncu -u
 	npm install
